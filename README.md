@@ -96,6 +96,8 @@ prompts. Phi-3-Mini showed strongest robustness here.
 ---
 
 ## Structure
+
+```
 llm-eval-framework/
 ├── evals/
 │   ├── instruction_following.py
@@ -104,18 +106,17 @@ llm-eval-framework/
 │   ├── perturbation_stability.py
 │   └── multi_step_reasoning.py
 ├── models/
-│   └── loader.py          # HuggingFace model loading + quantization
+│   └── loader.py
 ├── retrieval/
-│   ├── pinecone_store.py  # Vector store setup
-│   └── noise_injector.py  # Retrieval noise simulation
+│   ├── pinecone_store.py
+│   └── noise_injector.py
 ├── taxonomy/
 │   └── failure_classifier.py
 ├── results/
 │   └── summary.json
 ├── run_eval.py
 └── README.md
-
----
+```
 
 ## Why This Matters
 
